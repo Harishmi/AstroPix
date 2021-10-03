@@ -74,21 +74,61 @@
 			children = (
 				6846EC6827086F3B00FF510E /* AppDelegate.swift */,
 				6846EC6A27086F3B00FF510E /* SceneDelegate.swift */,
-				6846EC6E27086F3B00FF510E /* Main.storyboard */,
+				6846EC8F270A299300FF510E /* Model */,
+				6846EC90270A29EE00FF510E /* View */,
+				6846EC8E270A297E00FF510E /* ViewModels */,
 				6846EC7127086F3D00FF510E /* Assets.xcassets */,
-				6846EC7327086F3D00FF510E /* LaunchScreen.storyboard */,
 				6846EC7627086F3D00FF510E /* Info.plist */,
-				6846EC7C27087A4600FF510E /* NetworkManager.swift */,
-				6846EC6C27086F3B00FF510E /* APODViewController.swift */,
-				6846EC7E27087A5900FF510E /* APODViewModel.swift */,
-				6846EC8027087A6500FF510E /* Model.swift */,
-				6846EC8227087ABB00FF510E /* Constants.swift */,
-				6846EC842708BC8F00FF510E /* AstroModel.xcdatamodeld */,
-				6846EC872708CD4E00FF510E /* CoreDataStorage.swift */,
-				6846EC892708F9E700FF510E /* FavouritesViewController.swift */,
-				6846EC8B2708FB1700FF510E /* FavouritesViewModel.swift */,
+				6846EC8D270A296B00FF510E /* ViewControllers */,
+				6846EC91270A2A0300FF510E /* Util */,
 			);
 			path = AstroPix;
+			sourceTree = "<group>";
+		};
+		6846EC8D270A296B00FF510E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6846EC6C27086F3B00FF510E /* APODViewController.swift */,
+				6846EC892708F9E700FF510E /* FavouritesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6846EC8E270A297E00FF510E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6846EC7E27087A5900FF510E /* APODViewModel.swift */,
+				6846EC8B2708FB1700FF510E /* FavouritesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6846EC8F270A299300FF510E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6846EC8027087A6500FF510E /* Model.swift */,
+				6846EC842708BC8F00FF510E /* AstroModel.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6846EC90270A29EE00FF510E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6846EC6E27086F3B00FF510E /* Main.storyboard */,
+				6846EC7327086F3D00FF510E /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6846EC91270A2A0300FF510E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				6846EC7C27087A4600FF510E /* NetworkManager.swift */,
+				6846EC8227087ABB00FF510E /* Constants.swift */,
+				6846EC872708CD4E00FF510E /* CoreDataStorage.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
