@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		6846EC6927086F3B00FF510E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6846EC6827086F3B00FF510E /* AppDelegate.swift */; };
 		6846EC6B27086F3B00FF510E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6846EC6A27086F3B00FF510E /* SceneDelegate.swift */; };
-		6846EC6D27086F3B00FF510E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6846EC6C27086F3B00FF510E /* ViewController.swift */; };
+		6846EC6D27086F3B00FF510E /* APODViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6846EC6C27086F3B00FF510E /* APODViewController.swift */; };
 		6846EC7027086F3B00FF510E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6846EC6E27086F3B00FF510E /* Main.storyboard */; };
 		6846EC7227086F3D00FF510E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6846EC7127086F3D00FF510E /* Assets.xcassets */; };
 		6846EC7527086F3D00FF510E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6846EC7327086F3D00FF510E /* LaunchScreen.storyboard */; };
+		6846EC7D27087A4600FF510E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6846EC7C27087A4600FF510E /* NetworkManager.swift */; };
+		6846EC7F27087A5900FF510E /* APODViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6846EC7E27087A5900FF510E /* APODViewModel.swift */; };
+		6846EC8127087A6500FF510E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6846EC8027087A6500FF510E /* Model.swift */; };
+		6846EC8327087ABB00FF510E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6846EC8227087ABB00FF510E /* Constants.swift */; };
+		6846EC862708BC8F00FF510E /* AstroModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6846EC842708BC8F00FF510E /* AstroModel.xcdatamodeld */; };
+		6846EC882708CD4E00FF510E /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6846EC872708CD4E00FF510E /* CoreDataStorage.swift */; };
+		6846EC8A2708F9E700FF510E /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6846EC892708F9E700FF510E /* FavouritesViewController.swift */; };
+		6846EC8C2708FB1700FF510E /* FavouritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6846EC8B2708FB1700FF510E /* FavouritesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6846EC6527086F3B00FF510E /* AstroPix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstroPix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6846EC6827086F3B00FF510E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6846EC6A27086F3B00FF510E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6846EC6C27086F3B00FF510E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6846EC6C27086F3B00FF510E /* APODViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODViewController.swift; sourceTree = "<group>"; };
 		6846EC6F27086F3B00FF510E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6846EC7127086F3D00FF510E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6846EC7427086F3D00FF510E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6846EC7627086F3D00FF510E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6846EC7C27087A4600FF510E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		6846EC7E27087A5900FF510E /* APODViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODViewModel.swift; sourceTree = "<group>"; };
+		6846EC8027087A6500FF510E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		6846EC8227087ABB00FF510E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6846EC852708BC8F00FF510E /* AstroModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AstroModel.xcdatamodel; sourceTree = "<group>"; };
+		6846EC872708CD4E00FF510E /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
+		6846EC892708F9E700FF510E /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		6846EC8B2708FB1700FF510E /* FavouritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +74,19 @@
 			children = (
 				6846EC6827086F3B00FF510E /* AppDelegate.swift */,
 				6846EC6A27086F3B00FF510E /* SceneDelegate.swift */,
-				6846EC6C27086F3B00FF510E /* ViewController.swift */,
 				6846EC6E27086F3B00FF510E /* Main.storyboard */,
 				6846EC7127086F3D00FF510E /* Assets.xcassets */,
 				6846EC7327086F3D00FF510E /* LaunchScreen.storyboard */,
 				6846EC7627086F3D00FF510E /* Info.plist */,
+				6846EC7C27087A4600FF510E /* NetworkManager.swift */,
+				6846EC6C27086F3B00FF510E /* APODViewController.swift */,
+				6846EC7E27087A5900FF510E /* APODViewModel.swift */,
+				6846EC8027087A6500FF510E /* Model.swift */,
+				6846EC8227087ABB00FF510E /* Constants.swift */,
+				6846EC842708BC8F00FF510E /* AstroModel.xcdatamodeld */,
+				6846EC872708CD4E00FF510E /* CoreDataStorage.swift */,
+				6846EC892708F9E700FF510E /* FavouritesViewController.swift */,
+				6846EC8B2708FB1700FF510E /* FavouritesViewModel.swift */,
 			);
 			path = AstroPix;
 			sourceTree = "<group>";
@@ -138,7 +162,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6846EC6D27086F3B00FF510E /* ViewController.swift in Sources */,
+				6846EC8C2708FB1700FF510E /* FavouritesViewModel.swift in Sources */,
+				6846EC7F27087A5900FF510E /* APODViewModel.swift in Sources */,
+				6846EC862708BC8F00FF510E /* AstroModel.xcdatamodeld in Sources */,
+				6846EC7D27087A4600FF510E /* NetworkManager.swift in Sources */,
+				6846EC8A2708F9E700FF510E /* FavouritesViewController.swift in Sources */,
+				6846EC882708CD4E00FF510E /* CoreDataStorage.swift in Sources */,
+				6846EC6D27086F3B00FF510E /* APODViewController.swift in Sources */,
+				6846EC8127087A6500FF510E /* Model.swift in Sources */,
+				6846EC8327087ABB00FF510E /* Constants.swift in Sources */,
 				6846EC6927086F3B00FF510E /* AppDelegate.swift in Sources */,
 				6846EC6B27086F3B00FF510E /* SceneDelegate.swift in Sources */,
 			);
@@ -360,6 +392,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6846EC842708BC8F00FF510E /* AstroModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6846EC852708BC8F00FF510E /* AstroModel.xcdatamodel */,
+			);
+			currentVersion = 6846EC852708BC8F00FF510E /* AstroModel.xcdatamodel */;
+			path = AstroModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6846EC5D27086F3B00FF510E /* Project object */;
 }
