@@ -29,15 +29,18 @@ class APODViewController: UIViewController {
         }
         else {
             activityIndicator.startAnimating()
-            model.getImageData(date: Date()) { result in
+            apodImage.image = nil
+            model.getImageData(date: Date()) { [weak self]result in
             switch result {
             case .failure(let error):
-                print ("failure", error)
+                    self?.activityIndicator.stopAnimating()
+                    print(error)
+                
             case .success(let apod):
                 DispatchQueue.main.async {
-                    self.updateUI(apod: apod)
+                    self?.updateUI(apod: apod)
                 }
-                self.model.saveToStore(apod: apod)
+                self?.model.saveToStore(apod: apod)
             }
         }
         
@@ -54,15 +57,19 @@ class APODViewController: UIViewController {
         }
         else{
             activityIndicator.startAnimating()
-            model.getImageData(date: sender.date) { result in
+            apodImage.image = nil
+            model.getImageData(date: sender.date) { [weak self] result in
             switch result {
             case .failure(let error):
                 print ("failure", error)
+                DispatchQueue.main.async {
+                    self?.activityIndicator.stopAnimating()
+                }
             case .success(let apod):
                 DispatchQueue.main.async {
-                    self.updateUI(apod: apod)
+                    self?.updateUI(apod: apod)
                 }
-                self.model.saveToStore(apod: apod)
+                self?.model.saveToStore(apod: apod)
             }
         }
         }
@@ -77,6 +84,7 @@ class APODViewController: UIViewController {
         model.updateFavouriteFromStore(date: date, isFavourite: sender.isSelected)
     }
     func updateUIFrom(astroData: AstroData){
+        activityIndicator.stopAnimating()
         apodImage.image = UIImage(data: astroData.image!)
         apodExplanation.text = astroData.explanation
         favouriteButton.isSelected = astroData.isFavourite
