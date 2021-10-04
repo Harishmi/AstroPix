@@ -27,9 +27,9 @@ class APODViewModel {
     
     func getImageData(date: Date, completion: @escaping (Result<APOD, Error>)-> Void){
         let formatDate = dateFormatter(date: date)
-        print(formatDate)
+        //print(formatDate)
         let urlString = getUrlString(date: formatDate)
-        print(urlString)
+        //print(urlString)
         
         NetworkManager.shared.fetchRequest(urlString: urlString) { result in
             switch result {
@@ -65,7 +65,7 @@ class APODViewModel {
                 astroData.title = apod.title
                 do {
                     try managedContext.save()
-                    print("saved succesfully")
+                    //print("saved succesfully")
                 } catch let error as NSError {
                     print("Could not save. \(error), \(error.userInfo)")
                 }
@@ -108,7 +108,7 @@ class APODViewModel {
         // matching the predicate
         do{
             let astroData = try context.fetch(fetchRequest).first
-            print("object found")
+            //print("object found")
             return astroData
         }
         catch {
@@ -125,7 +125,7 @@ class APODViewModel {
         
         do {
             try managedContext.save()
-            print("updated succesfully")
+            //print("updated succesfully")
         } catch let error as NSError {
             print("Could not save. \(error), \(error.userInfo)")
         }
